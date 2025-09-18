@@ -33,7 +33,7 @@ export default function InstallPwaPrompt() {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
       <div className="bg-white rounded-2xl p-8 shadow-2xl max-w-xs w-full border-2 border-blue-600 text-center animate-fade-in">
-        <img src="/icon-192.png" alt="Installer" className="w-16 mx-auto mb-4" />
+        <img src="/icon-512.png" alt="Installer" className="w-16 mx-auto mb-4" />
         <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 bg-clip-text text-transparent">Installer l'application&nbsp;?</h2>
         <p className="text-gray-700 mb-6">Ajoutez BELLA LUXE Gestion de Stock sur votre écran d'accueil pour une expérience optimale&nbsp;!</p>
         <div className="flex flex-col gap-3">

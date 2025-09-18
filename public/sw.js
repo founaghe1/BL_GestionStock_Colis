@@ -4,6 +4,10 @@ const urlsToCache = [
   '/',
   '/index.html',
   '/manifest.json',
+  // '/styles.css',
+  '/app.js',
+  '/icon-192.png',
+  '/icon-512.png',
   // Ajoutez ici d'autres ressources à mettre en cache si besoin
 ];
 
