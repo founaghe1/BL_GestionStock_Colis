@@ -1,6 +1,6 @@
 {
 	"name": "BELLA LUXE Gestion de Stock",
-	"short_name": "StockGestion",
+	"short_name": "BELLA LUXE DSC",
 	"description": "Gérez vos stocks de colis facilement en mode PWA.",
 	"start_url": ".",
 	"display": "standalone",
@@ -8,11 +8,6 @@
 	"theme_color": "#2563eb",
 	"orientation": "portrait",
 		"icons": [
-			{
-				"src": "/icon-192.png",
-				"sizes": "192x192",
-				"type": "image/png"
-			},
 			{
 				"src": "/icon-512.png",
 				"sizes": "512x512",
