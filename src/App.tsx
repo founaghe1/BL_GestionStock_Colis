@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Plus, Package, Truck } from 'lucide-react';
+import { Plus, Package, Truck, FileText } from 'lucide-react';
 import { supabase } from './lib/supabase';
 import type { Product } from './lib/supabase';
 import SearchBar from './components/SearchBar';
@@ -68,6 +68,11 @@ function App() {
     setIsEditModalOpen(true);
   };
 
+  // Fonction pour ouvrir l'application de facturation
+  const openFacturationApp = () => {
+    window.open('https://bl-facturation.vercel.app/', '_blank');
+  };
+
   if (currentPage === 'packages') {
     return <PackageManagement onBack={() => setCurrentPage('products')} />;
   }
@@ -100,7 +105,17 @@ function App() {
                 <p className="text-purple-600 font-medium">Système moderne de gestion</p>
               </div>
             </div>
-            <div className="mr-4">
+            <div className="flex flex-col sm:flex-row gap-3 mr-4">
+              {/* Nouveau bouton Facturation */}
+              <button
+                onClick={openFacturationApp}
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-bold rounded-xl transition-all duration-300 shadow-2xl hover:shadow-green-500/25 transform hover:-translate-y-1 hover:scale-105"
+              >
+                <FileText className="h-5 w-5 mr-2" />
+                Facturation
+              </button>
+              
+              {/* Bouton existant Gestion des Colis */}
               <button
                 onClick={() => setCurrentPage('packages')}
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:from-indigo-700 hover:via-purple-700 hover:to-pink-700 text-white font-bold rounded-xl transition-all duration-300 shadow-2xl hover:shadow-indigo-500/25 transform hover:-translate-y-1 hover:scale-105"
